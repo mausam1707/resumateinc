@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here </title>
+    <style>
+        body {
+            background-image: url("Images/forgot.jpg");
+            background-size: 50%;
+        }
+
+        .heading {
+            width: 450px;
+            height: 600px;
+            text-align: center;
+            color: white;
+            margin: 100px auto;
+            background-color: rgba(48, 156, 45, 0.808);
+            border-radius: 20px;
+            padding-top: 25px;
+            display: inline-block;
+            margin-left: 10%;
+        }
+
+        .cred {
+            margin-top: 5px;
+            line-height: 25px;
+            border-radius: 10px;
+            padding-left: 5px;
+        }
+
+        .id {
+            margin-top: 20px;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: start;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: 50px;
+        }
+
+        .heading button {
+            margin-top: 10px;
+            height: 25px;
+            width: 120px;
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <div class="header">
+
+            <h1>Varify details</h1>
+        </div>
+
+        <form id="varifyForm">
+            <label class="id" for=""> Enter your Email address </label>
+            <input class="cred" type="email" name="" id="" placeholder="Email" required>
+            <label class="id" for=""> Enter your Phone Number </label>
+            <input class="cred" type="tel" name="phone" id="" placeholder="Phone" required>
+            <button>Varify </button>
+
+        </form>
+
+    </div>
+    <div class="heading">
+        <div class="header">
+
+            <h1>Create Credentials</h1>
+        </div>
+
+        <form id="createCredentialsForm"
+            action="https://script.google.com/macros/s/AKfycbyaXcm70D9j7JO3_YMGD2yy0EhvxKwcm_wwBfb0yL6G8DhegcO-42MgX0Ort6kPgVB4KQ/exec ">
+            <label class="id" for="resumateID"> Create an Resumate Id </label>
+            <input class="cred" type="" name="" id="" placeholder="Resumate-Id" required>
+            <button>Validate Id</button>
+            <label class="id"> Create a Password </label>
+            <input class="cred" type="password" placeholder="Password">
+            <label class="id" for=""> Confirm password</label>
+            <input class="cred" type="password" name="" id="" placeholder="New password" required>
+            <button>Submit</button>
+            <h3 class="new">Back to sign in <a href="scalaton.html" target="_blank">Sign In</a></h3>
+        </form>
+
+    </div>
+    <script>
+        const verifyForm = document.getElementById('verifyForm');
+        const createCredentialsForm = document.getElementById('createCredentialsForm');
+
+        verifyForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(verifyForm);
+            sendData(formData);
+        });
+
+        createCredentialsForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const formData = new FormData(createCredentialsForm);
+            sendData(formData);
+        });
+
+        function sendData(formData) {
+            const scriptURL = 'YOUR_WEB_APP_URL';
+
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new URLSearchParams(formData)
+            })
+                .then(response => response.text())
+                .then(result => {
+                    alert('Success: ' + result);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    alert('Error: ' + error.message);
+                });
+        }
+    </script>
+</body>
+
+</html>

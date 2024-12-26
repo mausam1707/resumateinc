@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ℝesumate - Home</title>
+    <style>
+        body {
+            background-color: rgb(223, 219, 219);
+            margin: 0px 0px;
+        }
+
+        .header {
+            background-color: rgba(0, 245, 65, 0.253);
+            box-sizing: border-box;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            color: rgb(119, 64, 0);
+
+        }
+
+        .topnav {
+            background-color: rgb(75, 119, 8);
+
+        }
+
+        .footer {
+            background-color: rgb(8, 65, 3);
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin-bottom: 10px;
+            margin-top: 200px;
+        }
+
+        .topnav a {
+            display: inline-block;
+            color: white;
+            padding: 14px 16px;
+            text-align: center;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .footer a {
+            display: inline-block;
+            color: white;
+            padding: 14px 16px;
+            text-align: center;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .topnav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .footer a:hover {
+            background-color: yellowgreen;
+            color: black;
+        }
+
+        .search {
+            background-image: url("Images/searchimage.jpg");
+            box-sizing: border-box;
+            height: 350px;
+            width: 100%;
+            margin-top: 30px;
+            margin-inline: auto;
+            border: solid 5px rgb(7, 22, 21);
+        }
+
+        .card {
+            text-align: center;
+            color: white;
+            font-size: 23px;
+        }
+
+        .card input {
+            border: 4px solid yellowgreen;
+            width: 350px;
+        }
+
+        .card input[type=text] {
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+        }
+
+        .string-search:hover {
+            color: rgb(241, 209, 209);
+        }
+
+        h2 {
+            background-color: rgb(34, 218, 147);
+            border: 5px solid rgb(51, 102, 62);
+            height: 30px;
+            width: 100%px;
+            margin: 125px 100px 0px 100px;
+        }
+
+
+        .jobcategory {
+            margin: 0px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        .category img {
+            width: 270px;
+            height: 150px;
+            border: groove;
+            margin: 50px;
+            margin-bottom: 0px;
+        }
+
+        .category:hover img {
+            transition: 0.5s ease;
+            transform: scale(1.1);
+            filter: contrast(1.3);
+
+        }
+
+        .category h3 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<div class="header">
+    <a href="homepage.html"> <img src="Images/Rezlogo.png" alt="" height="80"></a>
+    <h1> Welcome to ℝesumate</h1>
+
+</div>
+
+<body>
+    <div class="topnav">
+        <a href="benchsales.html" target="_self">For Benchsales</a>
+        <a href="candidates.html">For Candidates</a>
+        <a href="recruiter.html">For Recruiters</a>
+        <a href="homepage.html" style="float: left;">Home</a>
+
+    </div>
+    <div class="search">
+        <div class="card">
+            <h1> Search Here </h1>
+            <h4> Searh for hotlist, Resume and Job </h4>
+            <form>
+                <input type="text" name="search" placeholder="Enter string...">
+                <input type="text" name="search" placeholder="Location...">
+                <input type="submit" value="Search" class="string-search" style="width: 100px; height: 40px; border-style: groove; border-color: aqua; background-color: rgba(9, 219, 104, 0.582);
+                    font-size: 22px;">
+            </form>
+        </div>
+    </div>
+    <h2 style="text-align: center;">Search Job by Category</h2>
+    <div class="jobcategory">
+        <div class="category">
+            <a href="#"> <img src="Images/itjob.jpg" alt=" IT Jobs"></a>
+            <h3>IT Jobs</h3>
+        </div>
+        <div class="category">
+            <a href="#"> <img src="Images/NonIT.jpg" alt=""></a>
+            <h3>Non-IT Jobs</h3>
+        </div>
+
+    </div>
+    <div class="Newestjob">
+        <h1 style="text-align: center; background-color: rgb(8, 194, 32);">Latest Job Posted</h1>
+
+    </div>
+    <div class="footer">
+        <a href="#">About</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Follow on Linkedin</a>
+    </div>
+</body>
+
+</html>

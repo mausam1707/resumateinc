@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Images/laptop.jpg");
+    background-size: 100%;
+}
+
+.heading {
+    width: 450px;
+    height: 500px;
+    text-align: center;
+    color: white;
+    margin: 60px auto;
+    background-color: rgba(47, 216, 75, 0.486);
+    border-radius: 20px;
+    padding-top: 25px;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+#wel {
+    text-align: center;
+    margin-top: 40px;
+    color: red;
+}
+
+.header h2 {
+    color: rgb(203, 255, 16);
+    margin-bottom: 10px;
+
+}
+
+.header h1 {
+    font-style: oblique;
+    margin-bottom: 0px;
+    color: black;
+}
+
+#myVideo {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+.heading button {
+    height: 35px;
+    width: 100px;
+    font-size: large;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    align-self: center;
+    cursor: pointer;
+}
+
+.heading button:hover {
+    border: 6px groove green;
+    background-color: rgb(139, 183, 224)
+}
+
+.heading a {
+    margin: 15px 0px 5px;
+    text-align: left;
+    color: white;
+    display: flex;
+}
+
+.heading .new {
+    text-align: start;
+}
+
+.cred {
+    margin-top: 0px;
+    line-height: 25px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.id {
+    margin-top: 5px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+form label {
+    margin: 5px 0;
+}
