@@ -11,7 +11,7 @@ Welcome to my personal website! This is a simple static website created using HT
 ## Live Demo
 
 You can view the live version of the website here:  
-[https://<your-username>.github.io/<repository-name>/](https://<your-username>.github.io/<repository-name>/)
+[https://mausam1707.github.io/resumateinc/
 
 ## Technologies Used
 
