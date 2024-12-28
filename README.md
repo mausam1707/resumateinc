@@ -17,7 +17,8 @@ You can view the live version of the website here:
 
 - **HTML5**: For structuring the content of the website.
 - **CSS3**: For styling and layout.
-- Optional: Add any frameworks or libraries you may use.
+- Java Script is not been used yet.
 
-## File Structure
+## Objective
+- In this website, I am trying to make a UI for job seeakrs, and recruiters. This will also help recruiting companies. 
 
